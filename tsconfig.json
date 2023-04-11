@@ -1,0 +1,11 @@
+{
+    "moduleResolution": "node",
+    "compilerOptions": {
+    "module": "ES6",
+    "target": "es6",
+    "sourceMap": true
+    },
+    "exclude": [
+    "node_modules"
+    ]
+}

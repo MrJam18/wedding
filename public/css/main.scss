@@ -1,0 +1,245 @@
+/*==========================
+ Timeline Styles
+ =========================*/
+
+#timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#timeline ul li {
+  background-position: center top, center top;
+  background-repeat: no-repeat, repeat-y;
+  margin-bottom: 48px;
+}
+#timeline ul li::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#timeline ul li > div {
+  width: 50%;
+}
+#timeline ul li > div:first-child {
+  float: left;
+  text-align: right;
+  padding-right: 48px;
+}
+#timeline ul li > div:last-child {
+  float: right;
+  text-align: left;
+  padding-left: 48px;
+}
+#timeline ul li.current-day {
+  background: none;
+}
+
+/* sm */
+@media (max-width: 992px) {
+
+
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+
+  #timeline ul li {
+    background-image: none !important;
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 42px;
+    padding-bottom: 16px;
+    border-bottom: solid #ddd 1px;
+  }
+  #timeline ul li.current-day {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  #timeline ul li > div:first-child,
+  #timeline ul li > div:last-child {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #timeline ul li .datetime {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+}
+@charset "UTF-8";
+
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+
+@charset "UTF-8";
+.section.section-hint {
+  background-color:rgba(78,120,81,0.2509803922);
+  padding:48px 16px 60px;
+  position:relative
+}
+.section.section-hint::before {
+  content:"Эта подсказка видна только в демоверсии";
+  text-transform:uppercase;
+  text-align:center;
+  color:#777;
+  font-size:10px;
+  font-weight:300;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:16px
+}
+.section.section-hint::after {
+  content:"↓";
+  text-align:center;
+  color:#131313;
+  font-size:24px;
+  font-weight:300;
+  position:absolute;
+  width:100%;
+  left:0;
+  bottom:12px
+}
+.section.section-hint_noarrow {
+  padding:48px 16px 24px
+}
+.section.section-hint_noarrow::after {
+  content:""
+}
+.section.section-hint .section-body {
+  max-width:540px
+}
+.section.section-hint h3 {
+  font-family:"Playfair Display",serif;
+  font-size:24px;
+  margin:0;
+  margin-bottom:16px;
+  text-align:center
+}
+.section.section-hint p {
+  font-size:16px;
+  font-family:"Noto Sans",sans-serif !important;
+  text-align:center
+}
+.section.section-hint p strong {
+  font-weight:500
+}
+.section.section-hint p a {
+  color:inherit;
+  text-decoration:underline
+}
+@media(hover:hover) and (pointer:fine) {
+  .section.section-hint p a:hover {
+    text-decoration:none
+  }
+
+}
+.section.section-hint .text p:not(:last-child) {
+  margin-bottom:8px
+}
+.section.section-hint .button-wrapper {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:16px
+}
+.section.section-hint .button {
+  font-size:12px;
+  text-transform:uppercase;
+  border-radius:24px;
+  height:36px;
+  line-height:36px;
+  padding:0 16px
+}
+.section.section-hint .button:hover {
+  text-decoration:none
+}
+.section.section-hint .button-primary {
+  background-color:#4e7851;
+  color:#fff
+}
+.section__first {
+  background: url(../img/top_pc.png) center no-repeat !important;
+  background-size: 100vw 100vh !important;
+}
+.answers__button {
+  margin-top: 15px;
+}
+.gallery__img-cutted {
+  max-width: 300px;
+  max-height: 300px;
+}
+.registration__input-group {
+    margin-bottom: 10px !important;
+}
+.registration__input-label {
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+.input-label {
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+.modal__persons {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.registration__content-box {
+    max-width: 375px;
+}
+.registration__input {
+    height: 38px !important;
+}
+.registration__header {
+    padding-bottom: 0 !important;
+}
+.registration__button {
+    border-radius: 8px;
+    background: #4e7851;
+    color: #fff;
+    height: 42px;
+    min-width: 96px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    outline: none !important;
+    border: 0;
+    transition: background-color .15s ease-out,border-color .15s ease-out;
+}
+.error {
+    width: 100%;
+    text-align: center;
+    color: red;
+    display: none;
+}
+.modal {
+    transition: opacity 200ms;
+}
+.toast {
+    width: 100% !important;
+}
+#toast-container {
+    min-width: 400px !important;
+}
+.modal {
+    transition: background-color 200ms, opacity 200ms;
+}
+
+@media (max-width: 800px) {
+  .section__first {
+    background-size: cover;
+    background: url(../img/top.png) no-repeat bottom !important;
+  }
+}
